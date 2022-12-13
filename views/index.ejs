@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ("./partials/head.ejs") %>
+
+    <body>
+        <h1>Welcome to the crud form!</h1>
+
+        <form action="/movies" method="GET">
+            <input type="submit" value="GET" id="submit-m">
+        </form>
+
+        <form action="/movies/:id" method="GET">
+            <label for="movie_id_text">Enter id number : </label>
+            <input type="text" name="movie_id" id="movie_id_text">
+            <input type="submit" value="GET" id="submit-qid">
+        </form>
+        <br>
+        <br>
+        <form action="/movies/add" method="post">
+            <label for="add">Enter elements : </label>
+            <input type="text" name="add" id="add">
+            <input type="submit" value="ADD">
+        </form>
+
+    </body>
+
+</html>
